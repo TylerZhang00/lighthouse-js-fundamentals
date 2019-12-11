@@ -1,21 +1,10 @@
-const temperature = -1;
+const whichSchool = function (age) {
 
-if (temperature < 0) {
-  console.log("Make sure you pick out a scarf!");
-} else if (temperature < 15) {
-  console.log("Short sleeves won't cut it!");
+if (age < 13) {
+  console.log("Elementary School");
+} else if (age < 18 && age <= 13) {
+  console.log ("Secondary School");
 } else {
-  console.log("Short sleeves are fine.");
+  console.log("Lighthouse Labs");
 }
-
-console.log("Now you're ready to go outside!");
-
-const isCitizen = true;
-const age = 26;
-
-if (isCitizen && age > 18) {
-  console.log("You are eligible to vote.");
-}
-if (temperature < -40 || temperature > 40) {
-  console.log("Maybe going outside isn't such a great idea…");
 }
